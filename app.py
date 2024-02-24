@@ -234,7 +234,7 @@ def button_click(update: Update, context: CallbackContext) -> None:
    
 ########################################################################################################################################
 
-def main() -> None:
+def app() -> None:
     updater = Updater(Bot.token)
 
     dp = updater.dispatcher
@@ -253,10 +253,3 @@ def main() -> None:
 #if __name__ == '__main__':
 #    main()
 
-while True:
-    try:
-        print("% Restarting Telegram Bot % Animeweeb")
-        main()
-    except:
-        print("Error Occured ! ")
-        continue
